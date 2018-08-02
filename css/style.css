@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Spinnaker');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*---------------------------------------
+    NAVBAR
+-----------------------------------------*/
+nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  padding: 1em 3em;
+  box-sizing: border-box;
+  transition: .5s;
+  font-family: 'Spinnaker', sans-serif;
+  /* background: #161617; */
+}
+
+nav.black {
+  background: #161617;
+  height: 4em;
+  padding: .5em 2em;
+}
+
+nav .logo {
+  float: left;
+}
+
+nav .logo p {
+  color: #ffffff;
+  margin-top: 1em;
+  transition: .5s;
+}
+nav.black .logo p {
+  font-size: 1.35em;
+  display: inline-block;
+  padding-top: .2em;
+  transition: .5s;
+  margin-top: 0;
+}
+
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  line-height: 4em; /* this is equal to height of nav .logo img */
+  color: #ffffff;
+  padding: 5px 12px; /* change this as well */
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+nav.black ul li a {
+  line-height: 3em;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  /* color: #ECEFF1; */
+  text-decoration: none;
+  color: #FC575A;
+}
+
+.responsive-bar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .responsive-bar {
+    display: block;
+    width: 100%;
+    height: 3em;
+    background: #161617;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .15em .5em; /* change this!!!! */
+    box-sizing: border-box;
+    z-index: 12;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .responsive-bar .menu p {
+    float: right;
+    color: #ECEFF1;
+    margin: 0;
+    padding-top: .35em;
+    font-size: 1.25em;
+    cursor: pointer;
+  }
+
+  /* .responsive-bar .logo p */
+
+  nav, nav.black {
+    background:#161617;
+    height: 3em;
+    padding: 0;
+  }
+  nav .logo {
+    display: none;
+  }
+  
+  nav ul {
+    position: absolute;
+    width: 100%;
+    top: 3em;
+    left: 0;
+    background: #161617;
+    float: none;
+    display: none;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5em !important;
+    border-top: .2px solid rgb(236,239,241, 0.8); /* FIX THIS */
+  }
+}
+
+/*---------------------------------------
+    HOME
+-----------------------------------------*/
+#home img {
+  height: 42em;
+  width: 100%;
+}
