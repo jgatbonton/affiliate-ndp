@@ -140,6 +140,34 @@ nav ul li a.active, nav ul li a:hover {
     HOME
 -----------------------------------------*/
 #home img {
-  height: 42em;
+  height: 35em;
   width: 100%;
 }
+
+#home p {
+  color: #ffffff;
+  font-size: 5em;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  margin-top: 3.7em;
+  padding-left: 1em;
+  padding-right: 0.25em;
+  font-weight: bold;
+  background-color: #FC575A;
+}
+
+/*---------------------------------------
+    WHY/WHAT
+-----------------------------------------*/
+
+/*---------------------------------------
+    BENEFITS
+-----------------------------------------*/
+
+/*---------------------------------------
+    STEPS
+-----------------------------------------*/
+
+/*---------------------------------------
+    FOOTER
+-----------------------------------------*/
