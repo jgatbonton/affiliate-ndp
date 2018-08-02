@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Spinnaker');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*---------------------------------------
     NAVBAR
@@ -65,7 +66,6 @@ nav.black ul li a {
 }
 
 nav ul li a.active, nav ul li a:hover {
-  /* color: #ECEFF1; */
   text-decoration: none;
   color: #FC575A;
 }
@@ -85,27 +85,27 @@ nav ul li a.active, nav ul li a:hover {
     padding: .15em .5em; /* change this!!!! */
     box-sizing: border-box;
     z-index: 12;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spinnaker', sans-serif;
   }
 
   .responsive-bar .menu p {
     float: right;
-    color: #ECEFF1;
+    color: #ffffff;
     margin: 0;
     padding-top: .35em;
     font-size: 1.25em;
     cursor: pointer;
   }
 
-  /* .responsive-bar .logo p */
-
   nav, nav.black {
     background:#161617;
     height: 3em;
     padding: 0;
   }
-  nav .logo {
-    display: none;
+  .responsive-bar .logo {
+    float: left;
+    padding-top: .6em;
+    color: #ffffff;
   }
   
   nav ul {
@@ -132,7 +132,7 @@ nav ul li a.active, nav ul li a:hover {
     width: 100%;
     text-align: center;
     line-height: 2.5em !important;
-    border-top: .2px solid rgb(236,239,241, 0.8); /* FIX THIS */
+    border-top: .2px solid rgb(236,239,241, 0.8);
   }
 }
 
@@ -146,28 +146,236 @@ nav ul li a.active, nav ul li a:hover {
 
 #home p {
   color: #ffffff;
-  font-size: 5em;
+  font-size: 4.5em;
   font-family: 'Roboto', sans-serif;
   position: absolute;
-  margin-top: 3.7em;
+  margin-top: 4.2em;
   padding-left: 1em;
   padding-right: 0.25em;
   font-weight: bold;
   background-color: #FC575A;
 }
 
+@media screen and (max-width: 639px) {
+  #home img {
+   height: 16em;
+  }
+  #home p {
+    font-size: 2em;
+    margin-top: 4.5em;
+  }
+}
+
+/*---------------------------------------
+    CONTENT SPACING
+-----------------------------------------*/
+section.content {
+  padding-top: 3em; /* important to note */
+  position: relative;
+  color: #212121;
+}
+@media screen and (max-width: 639px) {
+ section.content {
+  padding-top: 1em;
+  }
+}
+
 /*---------------------------------------
     WHY/WHAT
 -----------------------------------------*/
+#why-affiliate h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #393f44;
+  font-size: 3em;
+  padding-bottom: .3em;
+}
+#why-affiliate p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #63696e;
+  padding-bottom: 2.3em;
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+
+}
+@media screen and (max-width: 639px) {
+  #why-affiliate h1 {
+    font-size: 1.8em;
+  }
+
+  #why-affiliate p {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+  }
+}
+
 
 /*---------------------------------------
     BENEFITS
 -----------------------------------------*/
+#benefits h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #393f44;
+  font-size: 3em;
+  padding-bottom: .3em;
+}
+
+#benefits .benefits-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  color: #63696e;
+  font-weight: 100;
+}
+#benefits .benefits-img {
+  height: 25em;
+  width: 21em;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-col-centered {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #benefits .benefits-img {
+    height: 20em;
+    width: 15em;
+  }
+  .benefits-paragraph {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 639px) {
+  #benefits .benefits-img {
+    height: 15em;
+    width: 12em;
+  }
+  #benefits h1 {
+    font-size: 1.8em;
+  }
+  .benefits-paragraph {
+    font-size: 0.8em;
+  }
+}
 
 /*---------------------------------------
     STEPS
 -----------------------------------------*/
+#steps h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #393f44;
+  font-size: 3em;
+  padding-bottom: .5em;
+}
+
+#steps .step-img {
+  height: 10em;
+  width: 10em;
+}
+
+#steps h2 {
+  padding-top: 0.7em;
+  font-family: 'Roboto', sans-serif;
+  color: #393f44;
+}
+
+#steps ul li {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  color: #63696e;
+  font-size: 0.9em;
+}
+
+#steps .steps-row {
+  padding-bottom: 2.5em;
+}
+
+#steps .step-link {
+  font-family: 'Roboto', sans-serif;
+  float: none;
+  margin: 0 auto;
+  text-decoration: none;
+  padding-bottom: 5em;
+}
+#steps .step-btn {
+  background-color: #FC575A;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  padding-left: 1.75em;
+  padding-right: 1.75em;
+  color: #ffffff;
+  float: none;
+  margin: 0 auto;
+  
+}
+#steps .step-btn:hover, #steps .step-btn:active {
+  text-decoration: none;
+  transition: .3s;
+  background-color: #C1D76F;
+}
+@media (max-width: 768px) {
+
+}
+@media screen and (max-width: 639px) {
+  #steps h1 {
+    font-size: 1.8em;
+    padding-top: 1em;
+  }
+
+  #steps p {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+  }
+
+  #steps .step-img {
+    height: 8em;
+    width: 8em;
+  }
+  #steps h2 {
+    font-size: 1.4em;
+  }
+  #steps ul li {
+    font-size: 0.6em;
+  }
+}
 
 /*---------------------------------------
     FOOTER
 -----------------------------------------*/
+footer {
+  background: #161617;
+  left: 0;
+  bottom: 0;
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 0.5em;
+}
+
+footer .contact-buttons {
+  text-align: center;
+  font-size: 2em;
+  overflow: hidden;
+  position: relative;
+  padding-top: 1em;
+
+}
+footer .contact-buttons a {
+text-decoration: none;
+}
+
+#youtube, #instagram, #linkedin, #facebook, #twitter, #pinterest {
+  color: #ffffff;
+
+}
+#youtube:hover, #instagram:hover, #linkedin:hover, #facebook:hover, #twitter:hover, #pinterest:hover {
+  color: #FC575A;
+} 
