@@ -200,10 +200,18 @@ section.content {
   position: relative;
   color: #212121;
 }
+section.content-steps {
+  padding-top: 9em; /* important to note */
+  position: relative;
+  color: #212121;
+}
 @media screen and (max-width: 639px) {
  section.content {
   padding-top: 1em;
   }
+  section.content-steps {
+    padding-top: 3em;
+    }
 }
 
 /*---------------------------------------
@@ -378,7 +386,7 @@ section.content {
 
 #steps .step-box {
   border: 2px solid #FC575A;
-  height: 20em;
+  height: 15em;
 }
 #steps .step-img {
   height: 10em;
@@ -390,7 +398,7 @@ section.content {
   font-family: 'Roboto', sans-serif;
   color: #FC575A;
   /* #393f44; */
-  padding-bottom: 1.35em;
+  padding-bottom: 0.5em;
 }
 
 #steps ul {
@@ -456,7 +464,7 @@ section.content {
 
   #steps .step-box {
     border: 2px solid #FC575A;
-    height: 10em;
+    height: 8em;
     width: 15em;
     margin-bottom: 2em;
     display: inline-block;
@@ -469,7 +477,8 @@ section.content {
 
   #steps h2 {
     font-size: 1.4em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   #steps ul li {
