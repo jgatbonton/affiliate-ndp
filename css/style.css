@@ -231,8 +231,12 @@ section.content-steps {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #63696e;
-  padding-bottom: 2.3em;
+  /* padding-bottom: 2.3em; */
   font-size: 1.2em;
+}
+
+#why-affiliate {
+  padding-bottom: 2.3em;
 }
 @media (max-width: 768px) {
 
@@ -244,6 +248,8 @@ section.content-steps {
 
   #why-affiliate p {
     font-size: 0.8em;
+  }
+  #why-affiliate {
     padding-bottom: 1em;
   }
 }
@@ -386,7 +392,7 @@ section.content-steps {
 
 #steps .step-box {
   border: 2px solid #FC575A;
-  height: 15em;
+  height: 17em;
 }
 #steps .step-img {
   height: 10em;
@@ -464,7 +470,7 @@ section.content-steps {
 
   #steps .step-box {
     border: 2px solid #FC575A;
-    height: 8em;
+    height: 10em;
     width: 15em;
     margin-bottom: 2em;
     display: inline-block;
@@ -477,12 +483,12 @@ section.content-steps {
 
   #steps h2 {
     font-size: 1.4em;
-    padding-bottom: 0;
+    padding-bottom: .2em;
     margin-bottom: 0;
   }
 
   #steps ul li {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   #steps .steps-row {
     padding-bottom: 1em;
