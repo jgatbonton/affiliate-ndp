@@ -179,6 +179,19 @@ nav ul li a.active, nav ul li a:hover {
   z-index: 2;
 }
 
+@media screen and (max-width: 991px) {
+  #home p {
+    font-size: 4em;
+    margin-top: 4.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  #home p {
+    font-size: 3.5em;
+    margin-top: 5em;
+  }
+}
 @media screen and (max-width: 639px) {
   #home img {
    height: 14em;
@@ -349,7 +362,7 @@ section.content-steps {
   }
   #benefits .benefits-title {
     font-size: 2.5em;
-    margin-left: 3.4em;
+    margin-left: 4em;
   }
   #benefits .benefits-paragraph {
     font-size: .8em;
@@ -361,12 +374,12 @@ section.content-steps {
 }
 @media screen and (max-width: 639px) {
   #benefits .benefits-img {
-    height: 12em;
-    width: 17em;
+    height: 14em;
+    width: 20em;
   }
   #benefits .benefits-title {
-    font-size: 1.8em;
-    margin-left: 1.7em;
+    font-size: 2.3em;
+    margin-left: 1.8em;
     margin-top: 4em;
     border-bottom: 4px solid rgba(252, 87, 90, 0.8);
   }
@@ -415,7 +428,7 @@ section.content-steps {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #393f44;
-  font-size: 0.95em;
+  font-size: 0.8em;
   list-style: none;
 }
 
@@ -454,8 +467,31 @@ section.content-steps {
   transition: .3s;
   background-color: #C1D76F;
 }
+@media screen and (max-width: 991px) {
+  #steps h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  #steps ul li {
+    font-size: 0.7em;
+  }
+}
 @media (max-width: 768px) {
-
+  #steps .step-box {
+    border: 2px solid #FC575A;
+    height: 13em;
+    margin-bottom: 2em;
+    width: 25em;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    /* margin-right: -4px; */
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #steps ul li {
+    font-size: 0.8em;
+  }
 }
 @media screen and (max-width: 639px) {
   #steps h1 {
