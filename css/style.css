@@ -252,7 +252,12 @@ section.content-steps {
   padding-bottom: 2.3em;
 }
 @media (max-width: 768px) {
-
+  #why-affiliate h1 {
+    font-size: 2.5em;
+  }
+  #why-affiliate p {
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 639px) {
   #why-affiliate h1 {
@@ -260,7 +265,7 @@ section.content-steps {
   }
 
   #why-affiliate p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   #why-affiliate {
     padding-bottom: 1em;
